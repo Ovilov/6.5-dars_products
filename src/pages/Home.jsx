@@ -17,12 +17,7 @@ function Home() {
       });
   }, []);
 
-  return (
-    <>
-      <div className="font-bold text-4xl opacity-60">App</div>
-      {products && <ProductList products={products} />}
-    </>
-  );
+  return <>{products && <ProductList products={products} />}</>;
 }
 
 export default Home;
