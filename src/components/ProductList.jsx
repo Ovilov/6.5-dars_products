@@ -2,7 +2,7 @@ import Product from "./Product";
 
 function ProductList({ products }) {
   return (
-    <div className="flex gap-[20px] container max-w-[1200px] m-auto items-center justify-between">
+    <div className="flex gap-[20px] container grid max-w-[1200px] m-auto items-center justify-between">
       {products.products.map((product) => {
         const { id, title, description, thumbnail, images, price } = product;
         return (
